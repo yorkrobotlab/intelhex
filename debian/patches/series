@@ -1,0 +1,5 @@
+# You must remove unused comment lines for the released package.
+fix-scripts-version-numbers
+remove-script-version-tests
+remove-py-files-install
+fix-scripts-usage-text

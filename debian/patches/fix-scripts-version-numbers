@@ -1,0 +1,74 @@
+Description: Fix scripts version numbers
+ Scripts had version set to 2.2 instead of 2.2.1, so tests failed.
+ .
+ intelhex (2.2.1-1) stretch; urgency=medium
+ .
+   * Initial release of Debian package.
+Author: Russell Joyce <russell.joyce@york.ac.uk>
+
+--- intelhex-2.2.1.orig/scripts/bin2hex.py
++++ intelhex-2.2.1/scripts/bin2hex.py
+@@ -35,7 +35,7 @@
+ 
+ '''Intel HEX file format bin2hex convertor utility.'''
+ 
+-VERSION = '2.2'
++VERSION = '2.2.1'
+ 
+ if __name__ == '__main__':
+     import getopt
+--- intelhex-2.2.1.orig/scripts/hex2bin.py
++++ intelhex-2.2.1/scripts/hex2bin.py
+@@ -35,7 +35,7 @@
+ 
+ '''Intel HEX file format hex2bin convertor utility.'''
+ 
+-VERSION = '2.2'
++VERSION = '2.2.1'
+ 
+ if __name__ == '__main__':
+     import getopt
+--- intelhex-2.2.1.orig/scripts/hex2dump.py
++++ intelhex-2.2.1/scripts/hex2dump.py
+@@ -35,7 +35,7 @@
+ 
+ """Show content of hex file as hexdump."""
+ 
+-VERSION = '2.2'
++VERSION = '2.2.1'
+ 
+ USAGE = '''hex2dump: show content of hex file as hexdump.
+ Usage:
+--- intelhex-2.2.1.orig/scripts/hexdiff.py
++++ intelhex-2.2.1/scripts/hexdiff.py
+@@ -37,7 +37,7 @@
+ of compared data.
+ """
+ 
+-VERSION = '2.2'
++VERSION = '2.2.1'
+ 
+ USAGE = '''hexdiff: diff dumps of 2 hex files.
+ Usage:
+--- intelhex-2.2.1.orig/scripts/hexinfo.py
++++ intelhex-2.2.1/scripts/hexinfo.py
+@@ -38,7 +38,7 @@
+         data (if any), in YAML format.
+ """
+ 
+-VERSION = '2.2'
++VERSION = '2.2.1'
+ 
+ USAGE = '''hexinfo: summarize a hex file's contents.
+ Usage:
+--- intelhex-2.2.1.orig/scripts/hexmerge.py
++++ intelhex-2.2.1/scripts/hexmerge.py
+@@ -35,7 +35,7 @@
+ 
+ """Merge content of several hex files into one file."""
+ 
+-VERSION = '2.2'
++VERSION = '2.2.1'
+ 
+ USAGE = '''hexmerge: merge content of hex files.
+ Usage:

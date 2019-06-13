@@ -1,0 +1,19 @@
+Description: Removed install of '.py' scripts files
+ Scripts are now installed using 'dh-exec' to remove .py extensions, so they
+ no longer need listing as scripts in setup.py (or they get copied twice).
+ .
+ intelhex (2.2.1-1) stretch; urgency=medium
+ .
+   * Initial release of Debian package.
+Author: Russell Joyce <russell.joyce@york.ac.uk>
+
+--- intelhex-2.2.1.orig/setup.py
++++ intelhex-2.2.1/setup.py
+@@ -46,7 +46,6 @@ METADATA = dict(
+       name='intelhex',
+       version=intelhex.__version__.version_str,
+ 
+-      scripts=glob.glob('scripts/*'),
+       packages=['intelhex'],
+ 
+       author='Alexander Belchenko',

@@ -1,0 +1,74 @@
+Description: Fixed usage text of scripts
+ They should no longer mention 'python' or the '.py' extensions.
+ .
+ intelhex (2.2.1-1) stretch; urgency=medium
+ .
+   * Initial release of Debian package.
+Author: Russell Joyce <russell.joyce@york.ac.uk>
+
+--- intelhex-2.2.1.orig/scripts/bin2hex.py
++++ intelhex-2.2.1/scripts/bin2hex.py
+@@ -44,7 +44,7 @@ if __name__ == '__main__':
+ 
+     usage = '''Bin2Hex convertor utility.
+ Usage:
+-    python bin2hex.py [options] INFILE [OUTFILE]
++    bin2hex [options] INFILE [OUTFILE]
+ 
+ Arguments:
+     INFILE      name of bin file for processing.
+--- intelhex-2.2.1.orig/scripts/hex2bin.py
++++ intelhex-2.2.1/scripts/hex2bin.py
+@@ -44,7 +44,7 @@ if __name__ == '__main__':
+ 
+     usage = '''Hex2Bin convertor utility.
+ Usage:
+-    python hex2bin.py [options] INFILE [OUTFILE]
++    hex2bin [options] INFILE [OUTFILE]
+ 
+ Arguments:
+     INFILE      name of hex file for processing.
+--- intelhex-2.2.1.orig/scripts/hex2dump.py
++++ intelhex-2.2.1/scripts/hex2dump.py
+@@ -39,7 +39,7 @@ VERSION = '2.2.1'
+ 
+ USAGE = '''hex2dump: show content of hex file as hexdump.
+ Usage:
+-    python hex2dump.py [options] HEXFILE
++    hex2dump [options] HEXFILE
+ 
+ Options:
+     -h, --help              this help message.
+--- intelhex-2.2.1.orig/scripts/hexdiff.py
++++ intelhex-2.2.1/scripts/hexdiff.py
+@@ -41,7 +41,7 @@ VERSION = '2.2.1'
+ 
+ USAGE = '''hexdiff: diff dumps of 2 hex files.
+ Usage:
+-    python hexdiff.py [options] FILE1 FILE2
++    hexdiff [options] FILE1 FILE2
+ 
+ Options:
+     -h, --help              this help message.
+--- intelhex-2.2.1.orig/scripts/hexinfo.py
++++ intelhex-2.2.1/scripts/hexinfo.py
+@@ -42,7 +42,7 @@ VERSION = '2.2.1'
+ 
+ USAGE = '''hexinfo: summarize a hex file's contents.
+ Usage:
+-    python hexinfo.py [options] FILE [ FILE ... ]
++    hexinfo [options] FILE [ FILE ... ]
+ 
+ Options:
+     -h, --help              this help message.
+--- intelhex-2.2.1.orig/scripts/hexmerge.py
++++ intelhex-2.2.1/scripts/hexmerge.py
+@@ -39,7 +39,7 @@ VERSION = '2.2.1'
+ 
+ USAGE = '''hexmerge: merge content of hex files.
+ Usage:
+-    python hexmerge.py [options] FILES...
++    hexmerge [options] FILES...
+ 
+ Options:
+     -h, --help              this help message.

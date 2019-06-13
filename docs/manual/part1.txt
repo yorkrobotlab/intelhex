@@ -1,7 +1,0 @@
-Introduction
-------------
-
-.. toctree::
-   :glob:
-
-   part1-*

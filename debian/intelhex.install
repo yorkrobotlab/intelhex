@@ -1,0 +1,7 @@
+#!/usr/bin/dh-exec
+scripts/bin2hex.py => /usr/bin/bin2hex
+scripts/hex2bin.py => /usr/bin/hex2bin
+scripts/hex2dump.py => /usr/bin/hex2dump
+scripts/hexdiff.py => /usr/bin/hexdiff
+scripts/hexinfo.py => /usr/bin/hexinfo
+scripts/hexmerge.py => /usr/bin/hexmerge

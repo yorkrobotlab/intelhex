@@ -1,0 +1,5 @@
+intelhex (2.2.1-1) stretch; urgency=medium
+
+  * Initial release of Debian package.
+
+ -- Russell Joyce <russell.joyce@york.ac.uk>  Wed, 12 Jun 2019 16:25:47 +0100
